@@ -1,0 +1,61 @@
+{
+  "acceptanceTestsPassed": 0,
+  "environment": {
+    "architecture": "[REDACTED]",
+    "build": "[BUILD_ID_REDACTED]",
+    "bundleIdentifier": "jp.customer-protection.poc.g0",
+    "os": "[REDACTED]",
+    "ownerAuthenticationAvailable": true,
+    "secureEnclaveAvailable": true
+  },
+  "events": [
+    {
+      "check": "G0-01-environment",
+      "date": "[REDACTED]",
+      "detail": "SE利用可能=true、本人確認利用可能=true。鍵操作成功の証拠とは別",
+      "id": "[REDACTED]",
+      "outcome": "観測"
+    },
+    {
+      "check": "G0-07-fingerprint",
+      "date": "[REDACTED]",
+      "detail": "3用途の公開鍵SHA-256指紋が初回記録と一致。秘密鍵の再利用確認には封緘/署名を続けて実施",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-03-ecies",
+      "date": "[REDACTED]",
+      "detail": "eciesEncryptionCofactorX963SHA256AESGCM、用途付き32byte鍵の往復一致=true、blob=153bytes。鍵値/平文は記録しない",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-05-admin-sign",
+      "date": "[REDACTED]",
+      "detail": "ecdsaSignatureMessageX962SHA256 / ASN.1 DER、正常=true/本文改ざん=false/署名改ざん=false、公開鍵=X9.63 65bytes、CryptoKit検証=true",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-05-writer-sign",
+      "date": "[REDACTED]",
+      "detail": "ecdsaSignatureMessageX962SHA256 / ASN.1 DER、正常=true/本文改ざん=false/署名改ざん=false、公開鍵=X9.63 65bytes、CryptoKit検証=true",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    }
+  ],
+  "format": "g0-evidence-v1",
+  "humanReview": "未実施（このJSONはアプリの観測記録）",
+  "pending": [
+    "本人確認の成功・取消・失敗の人による照合",
+    "画面ロック後の再確認",
+    "5分無操作後の再確認",
+    "アプリ再起動とOS再起動後の同一鍵利用",
+    "再署名後の鍵アクセス",
+    "コード・実機ログの人によるレビュー",
+    "G1仕様確定",
+    "T01〜T23統合受入"
+  ],
+  "public_release_redacted": true
+}

@@ -1,0 +1,33 @@
+warning: '-Xmanifest' option is deprecated; use '-Xbuild-tools-swiftc' instead
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[2/7] Write g0-self-test-entitlement.plist
+[3/7] Write swift-version--1AB21518FC5DEDBE.txt
+[5/12] Compiling G0Core ProbeError.swift
+[6/12] Compiling G0Core Envelope.swift
+[7/12] Compiling G0Core Evidence.swift
+[8/12] Emitting module G0Core
+[9/12] Compiling G0Core HardwareProbe.swift
+[10/15] Compiling G0SelfTest SelfTestRunner.swift
+[11/15] Compiling G0SelfTest EnvelopeTests.swift
+[12/15] Emitting module G0SelfTest
+[12/15] Write Objects.LinkFileList
+[13/15] Linking g0-self-test
+[14/15] Applying g0-self-test
+Build of product 'g0-self-test' complete! (2.56s)
+PASS canonical-byte-layout
+PASS purposes-and-u64-boundaries
+PASS every-truncated-length
+PASS trailing-data
+PASS unknown-version-purpose
+PASS purpose-confusion-both-directions
+PASS vault-epoch-mismatch
+PASS secret-length
+PASS digest-context-binding
+PASS sha256-known-vector
+PASS restart-fingerprint-mismatch
+PASS report-boundary
+PASS cancellation-before-key-access
+PASS cancel-failure-separation
+14/14 test cases passed; 117 assertions; hardware acceptance 0/23

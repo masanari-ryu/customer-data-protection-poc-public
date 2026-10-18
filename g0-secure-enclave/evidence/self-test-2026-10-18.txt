@@ -1,0 +1,15 @@
+PASS canonical-byte-layout
+PASS purposes-and-u64-boundaries
+PASS every-truncated-length
+PASS trailing-data
+PASS unknown-version-purpose
+PASS purpose-confusion-both-directions
+PASS vault-epoch-mismatch
+PASS secret-length
+PASS digest-context-binding
+PASS sha256-known-vector
+PASS restart-fingerprint-mismatch
+PASS report-boundary
+PASS cancellation-before-key-access
+PASS cancel-failure-separation
+14/14 test cases passed; 117 assertions; hardware acceptance 0/23

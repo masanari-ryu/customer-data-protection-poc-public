@@ -1,0 +1,30 @@
+# Generated builds and caches
+.DS_Store
+**/.build/
+**/build/
+**/.swiftpm/
+DerivedData/
+
+# Credentials, private keys and signing material
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.pem
+*.key
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.entitlements
+
+# Local editor files
+.vscode/
+.idea/
+
+# Versioned template only: identifiers are Xcode build variables.
+!g0-secure-enclave/xcode/ProtectionG0.entitlements
+
+# Xcode user-specific state
+**/xcuserdata/
+*.xcuserstate

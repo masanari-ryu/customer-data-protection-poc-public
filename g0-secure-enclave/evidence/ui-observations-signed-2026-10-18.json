@@ -1,0 +1,138 @@
+{
+  "acceptanceTestsPassed": 0,
+  "environment": {
+    "architecture": "[REDACTED]",
+    "build": "[BUILD_ID_REDACTED]",
+    "bundleIdentifier": "jp.customer-protection.poc.g0",
+    "os": "[REDACTED]",
+    "ownerAuthenticationAvailable": true,
+    "secureEnclaveAvailable": true
+  },
+  "events": [
+    {
+      "check": "G0-01-environment",
+      "date": "[REDACTED]",
+      "detail": "SE利用可能=true、本人確認利用可能=true。鍵操作成功の証拠とは別",
+      "id": "[REDACTED]",
+      "outcome": "観測"
+    },
+    {
+      "check": "G0-02-admin-sign",
+      "date": "[REDACTED]",
+      "detail": "SE/P-256専用鍵生成。公開鍵SHA-256=[PUBLIC_KEY_FINGERPRINT_REDACTED]",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-02-dk",
+      "date": "[REDACTED]",
+      "detail": "SE/P-256専用鍵生成。公開鍵SHA-256=[PUBLIC_KEY_FINGERPRINT_REDACTED]",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-02-writer-sign",
+      "date": "[REDACTED]",
+      "detail": "SE/P-256専用鍵生成。公開鍵SHA-256=[PUBLIC_KEY_FINGERPRINT_REDACTED]",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-02-export-dk",
+      "date": "[REDACTED]",
+      "detail": "SE/P-256秘密鍵属性確認済み。外部表現要求は失敗 code=-4。拒否理由は人が照合",
+      "id": "[REDACTED]",
+      "outcome": "観測"
+    },
+    {
+      "check": "G0-02-export-admin-sign",
+      "date": "[REDACTED]",
+      "detail": "SE/P-256秘密鍵属性確認済み。外部表現要求は失敗 code=-4。拒否理由は人が照合",
+      "id": "[REDACTED]",
+      "outcome": "観測"
+    },
+    {
+      "check": "G0-02-export-writer-sign",
+      "date": "[REDACTED]",
+      "detail": "SE/P-256秘密鍵属性確認済み。外部表現要求は失敗 code=-4。拒否理由は人が照合",
+      "id": "[REDACTED]",
+      "outcome": "観測"
+    },
+    {
+      "check": "G0-03-ecies",
+      "date": "[REDACTED]",
+      "detail": "eciesEncryptionCofactorX963SHA256AESGCM、用途付き32byte鍵の往復一致=true、blob=153bytes。鍵値/平文は記録しない",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-04-purpose-1",
+      "date": "[REDACTED]",
+      "detail": "逆用途の入力を拒否。復号値を応答・ログへ返さない",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-04-purpose-2",
+      "date": "[REDACTED]",
+      "detail": "逆用途の入力を拒否。復号値を応答・ログへ返さない",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-05-admin-sign",
+      "date": "[REDACTED]",
+      "detail": "ecdsaSignatureMessageX962SHA256 / ASN.1 DER、正常=true/本文改ざん=false/署名改ざん=false、公開鍵=X9.63 65bytes、CryptoKit検証=true",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-05-writer-sign",
+      "date": "[REDACTED]",
+      "detail": "ecdsaSignatureMessageX962SHA256 / ASN.1 DER、正常=true/本文改ざん=false/署名改ざん=false、公開鍵=X9.63 65bytes、CryptoKit検証=true",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-06-lock",
+      "date": "[REDACTED]",
+      "detail": "操作者によるロック。進行中コンテキストを無効化、秘密鍵参照・平文の常設キャッシュなし",
+      "id": "[REDACTED]",
+      "outcome": "観測"
+    },
+    {
+      "check": "G0-03-ecies",
+      "date": "[REDACTED]",
+      "detail": "eciesEncryptionCofactorX963SHA256AESGCM、用途付き32byte鍵の往復一致=true、blob=153bytes。鍵値/平文は記録しない",
+      "id": "[REDACTED]",
+      "outcome": "成功"
+    },
+    {
+      "check": "G0-06-lock",
+      "date": "[REDACTED]",
+      "detail": "操作者によるロック。進行中コンテキストを無効化、秘密鍵参照・平文の常設キャッシュなし",
+      "id": "[REDACTED]",
+      "outcome": "観測"
+    },
+    {
+      "check": "G0-03-sealing",
+      "date": "[REDACTED]",
+      "detail": "E02: 本人確認が取り消されました code=-2",
+      "id": "[REDACTED]",
+      "outcome": "取消"
+    }
+  ],
+  "format": "g0-evidence-v1",
+  "humanReview": "未実施（このJSONはアプリの観測記録）",
+  "pending": [
+    "本人確認の成功・取消・失敗の人による照合",
+    "画面ロック後の再確認",
+    "5分無操作後の再確認",
+    "アプリ再起動とOS再起動後の同一鍵利用",
+    "再署名後の鍵アクセス",
+    "コード・実機ログの人によるレビュー",
+    "G1仕様確定",
+    "T01〜T23統合受入"
+  ],
+  "public_release_redacted": true
+}

@@ -1,0 +1,10 @@
+warning: '-Xmanifest' option is deprecated; use '-Xbuild-tools-swiftc' instead
+[0/1] Planning build
+Building for debugging...
+[0/4] Write swift-version--1AB21518FC5DEDBE.txt
+[2/6] Emitting module G0Check
+[3/6] Compiling G0Check main.swift
+[3/6] Write Objects.LinkFileList
+[4/6] Linking g0-check
+[5/6] Applying g0-check
+Build of product 'g0-check' complete! (1.18s)

@@ -1,0 +1,16 @@
+{
+  "date": "[REDACTED]",
+  "xcode": "[REDACTED]",
+  "swift": "[REDACTED]",
+  "build_configuration": "Debug",
+  "bundle_version": "2",
+  "profile_expiration_jst": "[REDACTED]",
+  "signature_validation": "success",
+  "profile_app_id_match": true,
+  "profile_team_match": true,
+  "secret_material_exported": false,
+  "signed_executable_sha256": "[REDACTED]",
+  "signed_bundle_contents_sha256": "[REDACTED]",
+  "hash_method": "SHA256(sorted relative path UTF-8 + NUL + each file SHA256 digest)",
+  "public_release_redacted": true
+}

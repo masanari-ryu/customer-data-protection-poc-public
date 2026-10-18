@@ -1,0 +1,15 @@
+warning: '-Xmanifest' option is deprecated; use '-Xbuild-tools-swiftc' instead
+[0/1] Planning build
+Building for production...
+[0/4] Write sources
+[2/4] Write swift-version--1AB21518FC5DEDBE.txt
+[4/5] Compiling G0Core Envelope.swift
+[5/6] Compiling G0App AppModel.swift
+[5/7] Write Objects.LinkFileList
+[6/7] Linking ProtectionG0
+Build of product 'ProtectionG0' complete! (7.46s)
+warning: '-Xmanifest' option is deprecated; use '-Xbuild-tools-swiftc' instead
+[LOCAL_PATH_REDACTED] replacing existing signature
+G0アプリ: [LOCAL_PATH_REDACTED]
+ビルド: [BUILD_ID_REDACTED]
+実機鍵・本人確認・ロック・再起動の試験は未実施です。

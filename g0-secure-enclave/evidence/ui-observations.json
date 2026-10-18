@@ -1,0 +1,40 @@
+{
+  "acceptanceTestsPassed": 0,
+  "environment": {
+    "architecture": "[REDACTED]",
+    "build": "[BUILD_ID_REDACTED]",
+    "bundleIdentifier": "jp.customer-protection.poc.g0",
+    "os": "[REDACTED]",
+    "ownerAuthenticationAvailable": true,
+    "secureEnclaveAvailable": true
+  },
+  "events": [
+    {
+      "check": "G0-01-environment",
+      "date": "[REDACTED]",
+      "detail": "SE利用可能=true、本人確認利用可能=true。鍵操作成功の証拠とは別",
+      "id": "[REDACTED]",
+      "outcome": "観測"
+    },
+    {
+      "check": "G0-02-generate",
+      "date": "[REDACTED]",
+      "detail": "G0-SYSTEM: key-create-dk code=-34018",
+      "id": "[REDACTED]",
+      "outcome": "失敗"
+    }
+  ],
+  "format": "g0-evidence-v1",
+  "humanReview": "未実施（このJSONはアプリの観測記録）",
+  "pending": [
+    "本人確認の成功・取消・失敗の人による照合",
+    "画面ロック後の再確認",
+    "5分無操作後の再確認",
+    "アプリ再起動とOS再起動後の同一鍵利用",
+    "再署名後の鍵アクセス",
+    "コード・実機ログの人によるレビュー",
+    "G1仕様確定",
+    "T01〜T23統合受入"
+  ],
+  "public_release_redacted": true
+}
